@@ -27,7 +27,7 @@ const NewsletterBox = () => {
 
     try {
       // Send POST request to backend
-      const response = await axios.post('http://localhost:4000/api/newsletter/subscribe', { email });
+      const response = await axios.post('https://impactpure-backend.vercel.app/api/newsletter/subscribe', { email });
 
       // Handle successful response
       setMessage(response.data.message);
