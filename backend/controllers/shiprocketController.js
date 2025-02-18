@@ -438,7 +438,7 @@ const createShiprocketOrder = async (orderId) => {
 
       // 🔥 Call Your Backend API to Generate Invoice
       await axios.post(
-        `http://localhost:4000/api/shiprocket/generate-invoice`, // Call your backend API
+        `https://impactpure-backend.vercel.app/api/shiprocket/generate-invoice`, // Call your backend API
         { orderId: order._id.toString() },
         { headers: { "Content-Type": "application/json" } }
       );
