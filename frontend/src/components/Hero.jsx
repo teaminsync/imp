@@ -53,8 +53,8 @@ const Model = () => {
       <primitive
         object={isDismantled ? dismantledModel.scene : assembledModel.scene}
         scale={[0.07, 0.07, 0.07]}
-        position={[0, -3.0, 0]}
-        rotation={[0, 0, 0]}
+        position={[0, 3.5, 0]}
+        rotation={[Math.PI,0,0]}
         onPointerOver={() => !isMobile && setHovered(true)}
         onPointerOut={() => !isMobile && setHovered(false)}
         onClick={() => isMobile && setIsDismantled(!isDismantled)}
@@ -170,4 +170,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero;
