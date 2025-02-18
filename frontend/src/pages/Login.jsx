@@ -189,7 +189,7 @@ const Login = () => {
                 <div className="inline-flex items-center gap-2 mb-2 mt-10">
                     <hr className="border-none h-[1.5px] w-8 bg-[#023047]" />
                     <p className="outfit-regular text-3xl text-[#023047]">
-                        {forgotPassword ? "Forgot Passwordd" : currentState}
+                        {forgotPassword ? "Forgot Password" : currentState}
                     </p>
                     <hr className="border-none h-[1.5px] w-8 bg-[#023047]" />
                 </div>
