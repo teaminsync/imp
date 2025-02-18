@@ -15,6 +15,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import BgImage from "./assets/bg.png";
 import { useNavigate } from 'react-router-dom';
+import PP from './pages/PP'
+import CancellationsRefunds from './pages/CancellationsRefunds'
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -39,6 +41,8 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/tandc' element={<TandC />} />
+        <Route path='/privacy' element={<PP />} />
+        <Route path='/candr' element={<CancellationsRefunds />} />
       </Routes>
       <Footer />
     </div>
