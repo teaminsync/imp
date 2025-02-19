@@ -57,7 +57,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavigation('/tandc')}
-                className="text-gray-600 hover:underline"
+                className="text-gray-600 hover:underline text-left"
               >
                 Terms & Conditions
               </button>
@@ -65,7 +65,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavigation('/privacy')}
-                className="text-gray-600 hover:underline"
+                className="text-gray-600 hover:underline text-left"
               >
                 Privacy Policy
               </button>
@@ -73,9 +73,9 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavigation('/candr')}
-                className="text-gray-600 hover:underline"
+                className="text-gray-600 hover:underline text-left"
               >
-                Cancellations and Refunds
+               Cancellations & Refunds
               </button>
             </li>
           </ul>
