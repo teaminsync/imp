@@ -10,6 +10,12 @@ const Footer = () => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
   };
 
+  const handleProductClick = () => {
+    // Navigate to the product page with the specified productId
+    const productId = "67b3757b49af33739f957cf0";  // Use a dynamic product ID if required
+    navigate(`/product/${productId}`);  // Navigating to /product/:productId
+  };
+
   return (
     <div>
       <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
@@ -42,10 +48,18 @@ const Footer = () => {
             </li>
             <li>
               <button
-                onClick={() => window.open('https://www.shiprocket.in/shipment-tracking/', '_blank')}
+                onClick={() => window.open('/contact')}
                 className="text-gray-600 hover:underline"
               >
-                Delivery
+                Contact us
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={handleProductClick}
+                className="text-gray-600 hover:underline"
+              >
+                Product
               </button>
             </li>
           </ul>
@@ -56,7 +70,7 @@ const Footer = () => {
           <ul className='flex flex-col gap-1 text-gray-600'>
             <li>
               <button
-                onClick={() => handleNavigation('/tandc')}
+                onClick={() => handleNavigation('/termsandconditions')}
                 className="text-gray-600 hover:underline text-left"
               >
                 Terms & Conditions
@@ -64,7 +78,7 @@ const Footer = () => {
             </li>
             <li>
               <button
-                onClick={() => handleNavigation('/privacy')}
+                onClick={() => handleNavigation('/privacypolicy')}
                 className="text-gray-600 hover:underline text-left"
               >
                 Privacy Policy
@@ -72,10 +86,18 @@ const Footer = () => {
             </li>
             <li>
               <button
-                onClick={() => handleNavigation('/candr')}
+                onClick={() => handleNavigation('/cancellationsandrefunds')}
                 className="text-gray-600 hover:underline text-left"
               >
                Cancellations & Refunds
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleNavigation('/shippinganddelivery')}
+                className="text-gray-600 hover:underline text-left"
+              >
+               Shipping & Delivery Policy
               </button>
             </li>
           </ul>

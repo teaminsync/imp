@@ -17,6 +17,7 @@ import BgImage from "./assets/bg.png";
 import { useNavigate } from 'react-router-dom';
 import PP from './pages/PP'
 import CancellationsRefunds from './pages/CancellationsRefunds'
+import ShippingDelivery from './pages/ShippingDelivery'
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -40,9 +41,10 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Orders />} />
-        <Route path='/tandc' element={<TandC />} />
-        <Route path='/privacy' element={<PP />} />
-        <Route path='/candr' element={<CancellationsRefunds />} />
+        <Route path='/termsandconditions' element={<TandC />} />
+        <Route path='/privacypolicy' element={<PP />} />
+        <Route path='/cancellationsandrefunds' element={<CancellationsRefunds />} />
+        <Route path='/shippinganddelivery' element={<ShippingDelivery />} />
       </Routes>
       <Footer />
     </div>
