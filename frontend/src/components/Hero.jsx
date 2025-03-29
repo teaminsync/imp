@@ -80,7 +80,7 @@ const Hero = () => {
 
   const handleOrderNowClick = () => {
     // Navigate to the product page with the specified productId
-    const productId = "67b3757b49af33739f957cf0";  // Use a dynamic product ID if required
+    const productId = "67dd79e5366d9c007a9545a0";  // Use a dynamic product ID if required
     navigate(`/product/${productId}`);  // Navigating to /product/:productId
   };
 
